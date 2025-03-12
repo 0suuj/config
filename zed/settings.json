@@ -1,0 +1,27 @@
+// ~/.config/zed/settings.json
+{
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "New Darcula",
+    "dark": "JetBrains New Dark"
+  },
+  "features": {
+    "copilot": false,
+    "edit_prediction_provider": "none"
+  },
+  "assistant": {
+    "enabled": false,
+    "version": "1"
+  },
+  "lsp": {
+    "tinymist": {
+      "initialization_options": {
+        "exportPdf": "onSave",
+        "outputPath": "$root/$name"
+      }
+    }
+  }
+}
