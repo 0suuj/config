@@ -1,12 +1,16 @@
 // ~/.config/zed/settings.json
 {
+  "restore_on_startup": "none",
+  "cursor_shape": "underline",
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 16,
   "buffer_font_size": 16,
+  "buffer_font_family": "Noto Sans Mono",
+  "ui_font_family": "Noto Sans Mono",
   "theme": {
     "mode": "system",
-    "light": "New Darcula",
-    "dark": "JetBrains New Dark"
+    "light": "Xcode High Contrast Darker",
+    "dark": "Xcode High Contrast Darker"
   },
   "features": {
     "copilot": false,
@@ -19,9 +23,55 @@
   "lsp": {
     "tinymist": {
       "initialization_options": {
-        "exportPdf": "onSave",
-        "outputPath": "$root/$name"
+        "exportPdf": "false"
       }
+    }
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": true,
+    "selections_menu": true
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "project_panel": {
+    "default_width": 200,
+    "show_diagnostics": "errors"
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": "never"
+  },
+  "git_panel": {
+    "button": false
+  },
+  "message_editor": {
+    "auto_replace_emoji_shortcode": false
+  },
+  "notification_panel": {
+    "button": false
+  },
+  "tabs": {
+    "file_icons": true,
+    "show_close_button": "always"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "terminal": {
+    "default_height": 240,
+    "toolbar": {
+      "breadcrumbs": false
     }
   }
 }
