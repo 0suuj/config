@@ -36,7 +36,7 @@
     "selections_menu": true
   },
   "scrollbar": {
-    "show": "never"
+    "show": "always"
   },
   "project_panel": {
     "default_width": 200,
