@@ -13,6 +13,6 @@ export PATH=$HOME/.local/bin:$PATH
 export HISTIGNORE="clear:history:[bf]g:exit:date:* --help:ls:cd"
 export HISTCONTROL=ignoreboth
 
-alias cp="cp -i"
-alias ls='ls --color=auto'
+alias cp="cp -iv"
+alias ls='ls --group-directories-first --color=auto -lAvh'
 alias grep='grep --color=auto'
