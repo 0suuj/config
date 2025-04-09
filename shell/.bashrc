@@ -9,10 +9,6 @@ HISTSIZE=5000
 shopt -s histappend
 shopt -s checkwinsize
 
-export PATH=$HOME/.local/bin:$PATH
-export HISTIGNORE="clear:history:[bf]g:exit:date:* --help:ls:cd"
-export HISTCONTROL=ignoreboth
-
 alias cp="cp -iv"
 alias ls='ls --group-directories-first --color=auto -lAvh'
 alias grep='grep --color=auto'

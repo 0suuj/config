@@ -1,0 +1,8 @@
+[cursor]
+style = "Underline"
+
+[window]
+title = "atty"
+
+[font]
+size = 14

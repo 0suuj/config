@@ -1,0 +1,32 @@
+" ~.vim/vimrc
+syntax on
+
+set nocompatible
+set fileformat=unix
+set viminfo+=n~/.vim/viminfo
+
+set number number
+set encoding=utf-8
+set wildmode=longest,list,full
+set hlsearch
+set incsearch
+set clipboard=unnamedplus
+set autoindent
+set ruler
+set visualbell
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set noshiftround
+set hidden
+set ttyfast
+set laststatus=2
+set showmode
+set showcmd
+set ignorecase
+set smartcase
+set nobackup
+set nowb
+set noswapfile
+set showmatch
