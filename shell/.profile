@@ -1,7 +1,5 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-export PATH=$HOME/.local/bin:$PATH
-
 export EDITOR="vim"
 
 export HISTIGNORE="clear:history:[bf]g:exit:date:* --help:ls:cd"
@@ -19,3 +17,11 @@ export GOMODCACHE="$XDG_CACHE_HOME/go/mod"
 export HISTFILE="$XDG_DATA_HOME/history"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
 export SQLITE_HISTORY="$XDG_DATA_HOME/sqlite_history"
+
+# zed
+PATH=$HOME/.local/bin:$PATH
+
+# rust
+PATH=$CARGO_HOME/bin:$PATH
+
+export PATH
