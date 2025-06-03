@@ -1,8 +1,13 @@
 [cursor]
-style = "Underline"
+	style = "Block"
 
 [window]
-title = "atty"
+	title = "atty"
 
 [font]
-size = 14
+	size = 14
+
+[colors.primary]
+  background = "#000000"
+  foreground = "#FFFFFF"
+
