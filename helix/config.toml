@@ -1,4 +1,4 @@
-theme = "ashen"
+theme = "vesper"
 
 [editor.lsp]
 auto-signature-help = false
