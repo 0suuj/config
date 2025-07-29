@@ -1,4 +1,4 @@
-theme = "vesper"
+theme = "monokai_pro"
 
 [editor.lsp]
 auto-signature-help = false

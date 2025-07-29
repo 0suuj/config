@@ -1,7 +1,7 @@
 # ~/.bashrc
 [[ $- != *i* ]] && return
 
-PS1='\[$(tput setaf 51)\][\u@\h] \w \[$(tput sgr0)\]'
+PS1='\[$(tput setaf 3)\][\u@\h] \w \[$(tput sgr0)\]'
 
 export HISTTIMEFORMAT="[%d/%m/%y %T] "
 export HISTFILE="$XDG_DATA_HOME/history"
