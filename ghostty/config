@@ -1,0 +1,13 @@
+font-feature = -calt
+desktop-notifications = false
+maximize = true
+quit-after-last-window-closed = true
+clipboard-read = allow
+clipboard-write = allow
+copy-on-select = false
+clipboard-trim-trailing-spaces = false
+clipboard-paste-protection = false
+theme = Monokai Remastered
+font-size = 14
+gtk-tabs-location = bottom
+
