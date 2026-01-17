@@ -1,7 +1,0 @@
-theme = "term16_dark"
-
-[editor.lsp]
-auto-signature-help = false
-
-[keys.insert]
-C-p = "signature_help"
