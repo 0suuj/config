@@ -1,0 +1,22 @@
+[Desktop Entry]
+DefaultProfile=js.profile
+
+[General]
+ConfigVersion=1
+ShowWindowTitleOnTitleBar=false
+
+[KonsoleWindow]
+ShowWindowTitleOnTitleBar=false
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Enabled
+
+[Notification Messages]
+ShowPasteHugeTextWarning=false
+
+[SplitView]
+SplitViewVisibility=AlwaysHideSplitHeader
+
+[TabBar]
+SearchTabsButton=HideSearchTabsButton
