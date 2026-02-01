@@ -7,8 +7,20 @@ set completion-display-width 0
 set completion-map-case on
 set completion-ignore-case on
 set show-all-if-ambiguous on
+set visible-stats on
+
+set page-completions off
+set completion-query-items 200
+
+set skip-completed-text on
+set history-preserve-point on
+
 
 $if mode=emacs
+
+# Map Up/Down arrows to search history based on what you've already typed
+"\e[A": history-search-backward
+"\e[B": history-search-forward
 
 # for linux console and RH/Debian xterm
 "\e[1~": beginning-of-line

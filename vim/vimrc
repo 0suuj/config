@@ -1,16 +1,14 @@
-" ~.vim/vimrc
 syntax on
 
 set nocompatible
 set fileformat=unix
 set viminfo+=n~/.vim/viminfo
 
-set number number
+set number
 set encoding=utf-8
 set wildmode=longest,list,full
 set hlsearch
 set incsearch
-set clipboard=unnamedplus
 set autoindent
 set ruler
 set visualbell
@@ -18,9 +16,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set noshiftround
 set hidden
-set ttyfast
 set laststatus=2
 set showmode
 set showcmd
@@ -30,3 +26,41 @@ set nobackup
 set nowb
 set noswapfile
 set showmatch
+
+set clipboard=""
+
+"manually map 'y' and 'p' to the System Clipboard (+)
+nnoremap y "+y
+vnoremap y "+y
+nnoremap Y "+Y
+
+nnoremap p "+p
+vnoremap p "+p
+nnoremap P "+P
+vnoremap P "+P
+
+"prevent accidental macro recordings"
+map q <Nop>
+
+match ErrorMsg /\s\+$/
+
+function! SearchCount()
+    if !v:hlsearch
+        return ''
+    endif
+
+    let l:result = searchcount({'recompute': 1, 'maxcount': 999, 'timeout': 500})
+
+    if l:result.total > 0
+        return '[Matches: ' . l:result.current . '/' . l:result.total . ']'
+    endif
+
+    return ''
+endfunction
+
+set statusline=[\ %F\ %m]\ %{SearchCount()}%=[\ %l\ /\ %L\ ]
+
+"pressing esc clears search highlighting"
+nnoremap <silent> <Esc> :nohlsearch<CR>
+
+set shortmess+=SFI
